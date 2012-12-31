@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-01/AND_2/XOR_4_XOR_4_sch_tb_isim_beh.exe" -prj "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-01/AND_2/XOR_4_XOR_4_sch_tb_beh.prj" "work.XOR_4_XOR_4_sch_tb" 

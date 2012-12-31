@@ -1,0 +1,2 @@
+vhdl isim_temp "XOR_4.vhf"
+vhdl isim_temp "XOR4_tb.vhd"
