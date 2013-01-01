@@ -1,6 +1,0 @@
-set -tmpdir "H:/VHDL training/Security State Machine/xst/projnav.tmp"
-set -xsthdpdir "H:/VHDL training/Security State Machine/xst"
-elaborate
--lso "H:/VHDL training/Security State Machine/INDICATORS.lso"
--ifn INDICATORS.prj
--ifmt mixed

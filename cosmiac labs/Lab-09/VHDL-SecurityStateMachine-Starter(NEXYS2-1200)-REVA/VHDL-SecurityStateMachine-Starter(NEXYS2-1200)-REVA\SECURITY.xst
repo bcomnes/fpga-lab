@@ -1,6 +1,0 @@
-set -tmpdir "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/xst/projnav.tmp"
-set -xsthdpdir "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/xst"
-elaborate
--lso "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/SECURITY.lso"
--ifn SECURITY.prj
--ifmt mixed

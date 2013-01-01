@@ -1,5 +1,0 @@
-vhdl work "TIMER_DISPLAY.vhd"
-vhdl work "MEM16.vhd"
-vhdl work "INDICATORS.vhd"
-vhdl work "FSM.vhd"
-vhdl work "SECURITY.vhd"
