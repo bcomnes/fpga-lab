@@ -1,0 +1,47 @@
+Release 12.1 - xst M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/BrianZ/Desktop/BrainlessExp/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/BrianZ/Desktop/BrainlessExp/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd" in Library work.
+Architecture behavioral of Entity buffer4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" in Library work.
+Architecture behavioral of Entity clk_press_debouncer is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd" in Library work.
+Architecture behavioral of Entity register4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd" in Library work.
+Entity <disp_controller> compiled.
+Entity <disp_controller> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd" in Library work.
+Architecture behavioral of Entity brainless_up is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
+ 
+--> 
+
+Total memory usage is 203256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

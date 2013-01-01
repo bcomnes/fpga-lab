@@ -1,0 +1,532 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: SECURITY.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SECURITY.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SECURITY"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : SECURITY
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : SECURITY.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/INDICATORS.vhd" in Library work.
+Entity <indicators> compiled.
+Entity <indicators> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/TIMER_DISPLAY.vhd" in Library work.
+Entity <timer_display> compiled.
+Entity <timer_display> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/MEM16.vhd" in Library work.
+Entity <mem16> compiled.
+Entity <mem16> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/FSM.vhd" in Library work.
+Entity <fsm> compiled.
+Entity <fsm> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/SECURITY.vhd" in Library work.
+Architecture rtl of Entity security is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SECURITY> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <INDICATORS> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TIMER_DISPLAY> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEM16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FSM> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SECURITY> in library <work> (Architecture <rtl>).
+Entity <SECURITY> analyzed. Unit <SECURITY> generated.
+
+Analyzing Entity <INDICATORS> in library <work> (Architecture <behavioral>).
+Entity <INDICATORS> analyzed. Unit <INDICATORS> generated.
+
+Analyzing Entity <TIMER_DISPLAY> in library <work> (Architecture <behavioral>).
+Entity <TIMER_DISPLAY> analyzed. Unit <TIMER_DISPLAY> generated.
+
+Analyzing Entity <MEM16> in library <work> (Architecture <behavioral>).
+Entity <MEM16> analyzed. Unit <MEM16> generated.
+
+Analyzing Entity <FSM> in library <work> (Architecture <behavioral>).
+Entity <FSM> analyzed. Unit <FSM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <INDICATORS>.
+    Related source file is "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/INDICATORS.vhd".
+Unit <INDICATORS> synthesized.
+
+
+Synthesizing Unit <TIMER_DISPLAY>.
+    Related source file is "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/TIMER_DISPLAY.vhd".
+    Found 1-bit register for signal <CLK_DIV_INT>.
+    Found 4-bit up counter for signal <Q_INT>.
+    Found 28-bit up counter for signal <REG>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <TIMER_DISPLAY> synthesized.
+
+
+Synthesizing Unit <MEM16>.
+    Related source file is "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/MEM16.vhd".
+    Found 16x8-bit ROM for signal <DATA$rom0000> created at line 47.
+    Summary:
+	inferred   1 ROM(s).
+Unit <MEM16> synthesized.
+
+
+Synthesizing Unit <FSM>.
+    Related source file is "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/FSM.vhd".
+    Found finite state machine <FSM_0> for signal <CURR_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | ARM                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | disarmed                                       |
+    | Power Up State     | armed                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit up counter for signal <TIMER_CNTR>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+Unit <FSM> synthesized.
+
+
+Synthesizing Unit <SECURITY>.
+    Related source file is "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/SECURITY.vhd".
+Unit <SECURITY> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 3
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM_INST_0/CURR_STATE/FSM> on signal <CURR_STATE[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ armed      | 00
+ disarmed   | 01
+ wait_delay | 10
+ alarm      | 11
+------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 3
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SECURITY> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SECURITY, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SECURITY.ngr
+Top Level Output File Name         : SECURITY
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 123
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 27
+#      LUT2                        : 7
+#      LUT3                        : 2
+#      LUT4                        : 17
+#      MUXCY                       : 34
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 38
+#      FDC                         : 29
+#      FDCE                        : 7
+#      FDP                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 4
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       29  out of   8672     0%  
+ Number of Slice Flip Flops:             38  out of  17344     0%  
+ Number of 4 input LUTs:                 57  out of  17344     0%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    250     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+CLK                                | BUFGP                        | 35    |
+TIMER_DISPLAY_INST_0/CLK_DIV_INT   | NONE(FSM_INST_0/TIMER_CNTR_0)| 3     |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------+---------------------------------------+-------+
+Control Signal                                                                                     | Buffer(FF name)                       | Load  |
+---------------------------------------------------------------------------------------------------+---------------------------------------+-------+
+TIMER_DISPLAY_INST_0/CLK_DIV_INT_cmp_eq0000(TIMER_DISPLAY_INST_0/CLK_DIV_INT_cmp_eq0000_wg_cy<6>:O)| NONE(TIMER_DISPLAY_INST_0/CLK_DIV_INT)| 29    |
+FSM_INST_0/TIMER_CNTR_or0000(FSM_INST_0/TIMER_CNTR_or00001:O)                                      | NONE(FSM_INST_0/TIMER_CNTR_0)         | 7     |
+FSM_INST_0/CURR_STATE_FSM_Acst_FSM_inv(FSM_INST_0/CURR_STATE_FSM_Acst_FSM_inv1_INV_0:O)            | NONE(FSM_INST_0/CURR_STATE_FSM_FFd1)  | 2     |
+---------------------------------------------------------------------------------------------------+---------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.968ns (Maximum Frequency: 201.288MHz)
+   Minimum input arrival time before clock: 3.077ns
+   Maximum output required time after clock: 6.095ns
+   Maximum combinational path delay: 4.937ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.968ns (frequency: 201.288MHz)
+  Total number of paths / destination ports: 428 / 38
+-------------------------------------------------------------------------
+Delay:               4.968ns (Levels of Logic = 28)
+  Source:            TIMER_DISPLAY_INST_0/REG_1 (FF)
+  Destination:       TIMER_DISPLAY_INST_0/REG_27 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: TIMER_DISPLAY_INST_0/REG_1 to TIMER_DISPLAY_INST_0/REG_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  TIMER_DISPLAY_INST_0/REG_1 (TIMER_DISPLAY_INST_0/REG_1)
+     LUT1:I0->O            1   0.704   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<1>_rt (TIMER_DISPLAY_INST_0/Mcount_REG_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<1> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<2> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<3> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<4> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<5> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<6> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<7> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<8> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<9> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<10> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<11> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<12> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<13> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<14> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<15> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<16> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<17> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<18> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<19> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<20> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<21> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<22> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<23> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<24> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<25> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<25>)
+     MUXCY:CI->O           0   0.059   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_cy<26> (TIMER_DISPLAY_INST_0/Mcount_REG_cy<26>)
+     XORCY:CI->O           1   0.804   0.000  TIMER_DISPLAY_INST_0/Mcount_REG_xor<27> (Result<27>)
+     FDC:D                     0.308          TIMER_DISPLAY_INST_0/REG_27
+    ----------------------------------------
+    Total                      4.968ns (4.346ns logic, 0.622ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'TIMER_DISPLAY_INST_0/CLK_DIV_INT'
+  Clock period: 2.610ns (frequency: 383.142MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.610ns (Levels of Logic = 1)
+  Source:            FSM_INST_0/TIMER_CNTR_0 (FF)
+  Destination:       FSM_INST_0/TIMER_CNTR_0 (FF)
+  Source Clock:      TIMER_DISPLAY_INST_0/CLK_DIV_INT rising
+  Destination Clock: TIMER_DISPLAY_INST_0/CLK_DIV_INT rising
+
+  Data Path: FSM_INST_0/TIMER_CNTR_0 to FSM_INST_0/TIMER_CNTR_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.587  FSM_INST_0/TIMER_CNTR_0 (FSM_INST_0/TIMER_CNTR_0)
+     INV:I->O              1   0.704   0.420  FSM_INST_0/Mcount_TIMER_CNTR_xor<0>11_INV_0 (Result<0>2)
+     FDCE:D                    0.308          FSM_INST_0/TIMER_CNTR_0
+    ----------------------------------------
+    Total                      2.610ns (1.603ns logic, 1.007ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              3.077ns (Levels of Logic = 3)
+  Source:            REAR_DOOR (PAD)
+  Destination:       FSM_INST_0/CURR_STATE_FSM_FFd1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: REAR_DOOR to FSM_INST_0/CURR_STATE_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.526  REAR_DOOR_IBUF (REAR_DOOR_IBUF)
+     LUT4:I1->O            1   0.704   0.000  FSM_INST_0/CURR_STATE_FSM_FFd1-In2 (FSM_INST_0/CURR_STATE_FSM_FFd1-In2)
+     MUXF5:I0->O           1   0.321   0.000  FSM_INST_0/CURR_STATE_FSM_FFd1-In_f5 (FSM_INST_0/CURR_STATE_FSM_FFd1-In)
+     FDC:D                     0.308          FSM_INST_0/CURR_STATE_FSM_FFd1
+    ----------------------------------------
+    Total                      3.077ns (2.551ns logic, 0.526ns route)
+                                       (82.9% logic, 17.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 30 / 8
+-------------------------------------------------------------------------
+Offset:              6.095ns (Levels of Logic = 2)
+  Source:            TIMER_DISPLAY_INST_0/Q_INT_0 (FF)
+  Destination:       CATHODE<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: TIMER_DISPLAY_INST_0/Q_INT_0 to CATHODE<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   1.108  TIMER_DISPLAY_INST_0/Q_INT_0 (TIMER_DISPLAY_INST_0/Q_INT_0)
+     LUT4:I0->O            1   0.704   0.420  MEM16_INST_0/Mrom_DATA_rom000071 (CATHODE_7_OBUF)
+     OBUF:I->O                 3.272          CATHODE_7_OBUF (CATHODE<7>)
+    ----------------------------------------
+    Total                      6.095ns (4.567ns logic, 1.528ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               4.937ns (Levels of Logic = 2)
+  Source:            FRONT_DOOR (PAD)
+  Destination:       FRONT_DOOR_IND (PAD)
+
+  Data Path: FRONT_DOOR to FRONT_DOOR_IND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  FRONT_DOOR_IBUF (FRONT_DOOR_IBUF)
+     OBUF:I->O                 3.272          FRONT_DOOR_IND_OBUF (FRONT_DOOR_IND)
+    ----------------------------------------
+    Total                      4.937ns (4.490ns logic, 0.447ns route)
+                                       (90.9% logic, 9.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.20 secs
+ 
+--> 
+
+Total memory usage is 187992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

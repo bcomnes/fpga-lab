@@ -1,0 +1,28 @@
+Command line:
+   Brainless_uP_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49826
+
+Thu May 05 14:53:25 2011
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 655.7 Meg
+
+ Total Signals          : 72
+ Total Nets             : 98
+ Total Signal Drivers   : 26
+ Total Blocks           : 13
+ Total Primitive Blocks : 11
+ Total Processes        : 18
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 477
+
+ Total Simulation Time: 0.842405 sec
+
+ Current Memory Usage: 655.7 Meg
+
+Thu May 05 14:57:00 2011
+

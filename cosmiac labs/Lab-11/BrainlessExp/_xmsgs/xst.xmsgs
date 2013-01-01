@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd</arg>&quot; line <arg fmt="%d" index="2">125</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Cout</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">Cout</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Cin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">2</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Y</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Y</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">TEMP_DATA_OUT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">LOW</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DUMMY_EN</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DUMMY_Cin</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DUMMY_CLEAR</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALU_IN</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">U2_BUFFER4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U2_BUFFER4/Y_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U2_BUFFER4/Y_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U2_BUFFER4/Y_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U2_BUFFER4/Y_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">U0_DECODER/Y_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">U0_DECODER/Y_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BRAINLESS_uP</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

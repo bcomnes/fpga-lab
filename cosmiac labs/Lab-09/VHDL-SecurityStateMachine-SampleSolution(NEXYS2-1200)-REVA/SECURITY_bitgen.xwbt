@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\VHDL training\VHDL-SecurityStateMachine-SampleSolution(NEXYS2-1200)-REVA\SECURITY.ncd
+OUTFILE=C:\VHDL training\VHDL-SecurityStateMachine-SampleSolution(NEXYS2-1200)-REVA\SECURITY.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=C:\VHDL training\VHDL-SecurityStateMachine-SampleSolution(NEXYS2-1200)-REVA
+LICENSE=WebPack
+USER_INFO=180066179_0_0_012

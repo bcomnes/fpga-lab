@@ -1,0 +1,24 @@
+## These pin assignments for for the Nexys 3, Spartan 6 board. 
+## If you are using a different board, change the LOC = " " assignments
+## as needed. Check your board's reference manaul clock and I/O sections
+
+
+NET "CLK" LOC = "V10";					# Check Reference manual for correct assignment for clock
+NET "RESET" LOC = "D9";          	# reset uses BTNR, the reset button on the board resets the entire board
+NET "PAUSE" LOC = "T5";					# setting SW7 to high will pause the counter 
+NET "COUNT_OUT(0)" LOC = "U16";  	# LED0 
+NET "COUNT_OUT(1)" LOC = "V16";   	# LED1 
+NET "COUNT_OUT(2)" LOC = "U15";   	# LED2 
+NET "COUNT_OUT(3)" LOC = "V15";   	# LED3 
+NET "COUNT_BLINK" LOC = "T11";     	# LED7 
+NET "AN(0)" LOC = "N16";          	# Transistor AN0 
+NET "AN(1)" LOC = "N15"; 		    	# Transistor AN1 
+NET "AN(2)" LOC = "P18";       	 	# Transistor AN2 
+NET "AN(3)" LOC = "P17";      		# Transistor AN3 
+NET "SSEG(0)" LOC = "T17";				# Segment A of HEX 
+NET "SSEG(1)" LOC = "T18";				# Segment B of HEX 
+NET "SSEG(2)" LOC = "U17";				# Segment C of HEX 
+NET "SSEG(3)" LOC = "U18";				# Segment D of HEX 
+NET "SSEG(4)" LOC = "M14";				# Segment E of HEX 
+NET "SSEG(5)" LOC = "N14";				# Segment F of HEX 
+NET "SSEG(6)" LOC = "L14";				# Segment G of Hex 

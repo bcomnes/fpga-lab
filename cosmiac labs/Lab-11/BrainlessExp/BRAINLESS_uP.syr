@@ -1,0 +1,740 @@
+Release 12.1 - xst M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: BRAINLESS_uP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BRAINLESS_uP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BRAINLESS_uP"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : BRAINLESS_uP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : BRAINLESS_uP.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd" in Library work.
+Architecture behavioral of Entity buffer4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" in Library work.
+Architecture behavioral of Entity clk_press_debouncer is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd" in Library work.
+Architecture behavioral of Entity register4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd" in Library work.
+Architecture behavioral of Entity disp_controller is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd" in Library work.
+Architecture behavioral of Entity brainless_up is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BRAINLESS_uP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DECODER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BUFFER4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CLK_PRESS_DEBOUNCER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REGISTER4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DISP_controller> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <BRAINLESS_uP> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd" line 125: Unconnected output port 'Cout' of component 'ALU'.
+Entity <BRAINLESS_uP> analyzed. Unit <BRAINLESS_uP> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd" line 52: Mux is complete : default of case is discarded
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <DECODER> in library <work> (Architecture <behavioral>).
+Entity <DECODER> analyzed. Unit <DECODER> generated.
+
+Analyzing Entity <BUFFER4> in library <work> (Architecture <behavioral>).
+Entity <BUFFER4> analyzed. Unit <BUFFER4> generated.
+
+Analyzing Entity <CLK_PRESS_DEBOUNCER> in library <work> (Architecture <behavioral>).
+Entity <CLK_PRESS_DEBOUNCER> analyzed. Unit <CLK_PRESS_DEBOUNCER> generated.
+
+Analyzing Entity <REGISTER4> in library <work> (Architecture <behavioral>).
+Entity <REGISTER4> analyzed. Unit <REGISTER4> generated.
+
+Analyzing Entity <DISP_controller> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd" line 62: Mux is complete : default of case is discarded
+Entity <DISP_controller> analyzed. Unit <DISP_controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd".
+WARNING:Xst:1305 - Output <Cout> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <Cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 8-to-1 multiplexer for signal <Y>.
+    Found 4-bit adder for signal <Y$addsub0000>.
+    Found 4-bit adder for signal <Y$addsub0001> created at line 44.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <DECODER>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd".
+WARNING:Xst:737 - Found 2-bit latch for signal <Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <DECODER> synthesized.
+
+
+Synthesizing Unit <BUFFER4>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <BUFFER4> synthesized.
+
+
+Synthesizing Unit <CLK_PRESS_DEBOUNCER>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | SYS_CLK                   (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <DEB_BTN>.
+    Found 24-bit up counter for signal <counter>.
+    Found 1-bit register for signal <run_counter>.
+    Found 1-bit register for signal <stop_counter>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <CLK_PRESS_DEBOUNCER> synthesized.
+
+
+Synthesizing Unit <REGISTER4>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd".
+    Found 4-bit register for signal <Y>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <REGISTER4> synthesized.
+
+
+Synthesizing Unit <DISP_controller>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd".
+    Found 16x7-bit ROM for signal <digit_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <DISP_controller> synthesized.
+
+
+Synthesizing Unit <BRAINLESS_uP>.
+    Related source file is "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd".
+WARNING:Xst:646 - Signal <TEMP_DATA_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <LOW> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <DUMMY_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DUMMY_Cin> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <DUMMY_CLEAR> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:737 - Found 4-bit latch for signal <ALU_IN>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <BRAINLESS_uP> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 3
+ 4-bit register                                        : 1
+# Latches                                              : 5
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 4
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <DEBOUNCER/state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ low   | 01
+ high  | 10
+-------------------
+WARNING:Xst:1290 - Hierarchical block <U2_BUFFER4> is unconnected in block <BRAINLESS_uP>.
+   It will be removed from the design.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Latches                                              : 5
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 4
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <U2_BUFFER4/Y_3> of sequential type is unconnected in block <BRAINLESS_uP>.
+WARNING:Xst:2677 - Node <U2_BUFFER4/Y_2> of sequential type is unconnected in block <BRAINLESS_uP>.
+WARNING:Xst:2677 - Node <U2_BUFFER4/Y_1> of sequential type is unconnected in block <BRAINLESS_uP>.
+WARNING:Xst:2677 - Node <U2_BUFFER4/Y_0> of sequential type is unconnected in block <BRAINLESS_uP>.
+WARNING:Xst:1294 - Latch <U0_DECODER/Y_1> is equivalent to a wire in block <BRAINLESS_uP>.
+WARNING:Xst:1294 - Latch <U0_DECODER/Y_0> is equivalent to a wire in block <BRAINLESS_uP>.
+
+Optimizing unit <BRAINLESS_uP> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <CLK_PRESS_DEBOUNCER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BRAINLESS_uP, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BRAINLESS_uP.ngr
+Top Level Output File Name         : BRAINLESS_uP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 152
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 23
+#      LUT2                        : 6
+#      LUT3                        : 18
+#      LUT3_D                      : 1
+#      LUT4                        : 38
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 29
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 45
+#      FD                          : 3
+#      FDC                         : 24
+#      FDE                         : 1
+#      FDRE                        : 4
+#      FDRS                        : 1
+#      LD                          : 8
+#      LDCPE                       : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 11
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       48  out of   4656     1%  
+ Number of Slice Flip Flops:             45  out of   9312     0%  
+ Number of 4 input LUTs:                 90  out of   9312     0%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  27  out of    232    11%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+RD_WR                                              | IBUF+BUFG              | 4     |
+DEBOUNCER/DEB_BTN                                  | NONE(U0_REGISTER4/Y_3) | 4     |
+U1_BUFFER4/Y_cmp_eq0000(U1_BUFFER4/Y_cmp_eq00001:O)| NONE(*)(U1_BUFFER4/Y_3)| 4     |
+U0_BUFFER4/Y_cmp_eq0000(U0_BUFFER4/Y_cmp_eq00001:O)| NONE(*)(U0_BUFFER4/Y_3)| 4     |
+SYS_CLK                                            | BUFGP                  | 29    |
+---------------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------+--------------------------+-------+
+Control Signal                                               | Buffer(FF name)          | Load  |
+-------------------------------------------------------------+--------------------------+-------+
+DEBOUNCER/run_counter_inv(DEBOUNCER/run_counter_inv1_INV_0:O)| NONE(DEBOUNCER/counter_0)| 24    |
+ALU_IN_0__and0000(ALU_IN_0__and00001:O)                      | NONE(ALU_IN_0)           | 1     |
+ALU_IN_0__and0001(ALU_IN_0__and00011:O)                      | NONE(ALU_IN_0)           | 1     |
+ALU_IN_1__and0000(ALU_IN_1__and00001:O)                      | NONE(ALU_IN_1)           | 1     |
+ALU_IN_1__and0001(ALU_IN_1__and00011:O)                      | NONE(ALU_IN_1)           | 1     |
+ALU_IN_2__and0000(ALU_IN_2__and00001:O)                      | NONE(ALU_IN_2)           | 1     |
+ALU_IN_2__and0001(ALU_IN_2__and00011:O)                      | NONE(ALU_IN_2)           | 1     |
+ALU_IN_3__and0000(ALU_IN_3__and00001:O)                      | NONE(ALU_IN_3)           | 1     |
+ALU_IN_3__and0001(ALU_IN_3__and00011:O)                      | NONE(ALU_IN_3)           | 1     |
+-------------------------------------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.354ns (Maximum Frequency: 229.679MHz)
+   Minimum input arrival time before clock: 9.182ns
+   Maximum output required time after clock: 11.673ns
+   Maximum combinational path delay: 13.901ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DEBOUNCER/DEB_BTN'
+  Clock period: 4.354ns (frequency: 229.679MHz)
+  Total number of paths / destination ports: 19 / 4
+-------------------------------------------------------------------------
+Delay:               4.354ns (Levels of Logic = 5)
+  Source:            U0_REGISTER4/Y_3 (FF)
+  Destination:       U0_REGISTER4/Y_3 (FF)
+  Source Clock:      DEBOUNCER/DEB_BTN rising
+  Destination Clock: DEBOUNCER/DEB_BTN rising
+
+  Data Path: U0_REGISTER4/Y_3 to U0_REGISTER4/Y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.383  U0_REGISTER4/Y_3 (U0_REGISTER4/Y_3)
+     LUT4_D:I3->O          2   0.612   0.410  U0_ALU/Madd_Y_addsub0000_lut<3>48 (U0_ALU/Madd_Y_addsub0000_lut<3>)
+     LUT3:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC331_SW0_G (N34)
+     MUXF5:I1->O           1   0.278   0.387  U0_ALU/ARITH_LOGIC331_SW0 (N22)
+     LUT4:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC348_F (N49)
+     MUXF5:I0->O           9   0.278   0.000  U0_ALU/ARITH_LOGIC348 (DATA_OUT_3_OBUF)
+     FDRE:D                    0.268          U0_REGISTER4/Y_3
+    ----------------------------------------
+    Total                      4.354ns (3.174ns logic, 1.180ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 4.110ns (frequency: 243.282MHz)
+  Total number of paths / destination ports: 340 / 32
+-------------------------------------------------------------------------
+Delay:               4.110ns (Levels of Logic = 24)
+  Source:            DEBOUNCER/counter_1 (FF)
+  Destination:       DEBOUNCER/counter_23 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: DEBOUNCER/counter_1 to DEBOUNCER/counter_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  DEBOUNCER/counter_1 (DEBOUNCER/counter_1)
+     LUT1:I0->O            1   0.612   0.000  DEBOUNCER/Mcount_counter_cy<1>_rt (DEBOUNCER/Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  DEBOUNCER/Mcount_counter_cy<1> (DEBOUNCER/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  DEBOUNCER/Mcount_counter_cy<2> (DEBOUNCER/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<3> (DEBOUNCER/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<4> (DEBOUNCER/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<5> (DEBOUNCER/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<6> (DEBOUNCER/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<7> (DEBOUNCER/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<8> (DEBOUNCER/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<9> (DEBOUNCER/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<10> (DEBOUNCER/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<11> (DEBOUNCER/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<12> (DEBOUNCER/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<13> (DEBOUNCER/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<14> (DEBOUNCER/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<15> (DEBOUNCER/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<16> (DEBOUNCER/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<17> (DEBOUNCER/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<18> (DEBOUNCER/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<19> (DEBOUNCER/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<20> (DEBOUNCER/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  DEBOUNCER/Mcount_counter_cy<21> (DEBOUNCER/Mcount_counter_cy<21>)
+     MUXCY:CI->O           0   0.051   0.000  DEBOUNCER/Mcount_counter_cy<22> (DEBOUNCER/Mcount_counter_cy<22>)
+     XORCY:CI->O           1   0.699   0.000  DEBOUNCER/Mcount_counter_xor<23> (DEBOUNCER/Result<23>)
+     FDC:D                     0.268          DEBOUNCER/counter_23
+    ----------------------------------------
+    Total                      4.110ns (3.579ns logic, 0.532ns route)
+                                       (87.1% logic, 12.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RD_WR'
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Offset:              3.046ns (Levels of Logic = 2)
+  Source:            BUFFER_SELECT (PAD)
+  Destination:       ALU_IN_0 (LATCH)
+  Destination Clock: RD_WR falling
+
+  Data Path: BUFFER_SELECT to ALU_IN_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.106   1.060  BUFFER_SELECT_IBUF (BUFFER_SELECT_IBUF)
+     LUT4:I0->O            1   0.612   0.000  ALU_IN_mux0000<3>1 (ALU_IN_mux0000<3>)
+     LDCPE:D                   0.268          ALU_IN_3
+    ----------------------------------------
+    Total                      3.046ns (1.986ns logic, 1.060ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DEBOUNCER/DEB_BTN'
+  Total number of paths / destination ports: 163 / 8
+-------------------------------------------------------------------------
+Offset:              9.182ns (Levels of Logic = 9)
+  Source:            ALU_CONTROL_SIGNALS<1> (PAD)
+  Destination:       U0_REGISTER4/Y_3 (FF)
+  Destination Clock: DEBOUNCER/DEB_BTN rising
+
+  Data Path: ALU_CONTROL_SIGNALS<1> to U0_REGISTER4/Y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   0.919  ALU_CONTROL_SIGNALS_1_IBUF (ALU_CONTROL_SIGNALS_1_IBUF)
+     LUT3:I1->O           11   0.612   0.945  U0_ALU/Y_mux0001<3>11 (U0_ALU/N11)
+     LUT3:I0->O            2   0.612   0.410  U0_ALU/Y_mux0001<3>411 (U0_ALU/N18)
+     LUT4:I2->O            1   0.612   0.509  U0_ALU/Madd_Y_addsub0000_lut<3>11 (U0_ALU/Madd_Y_addsub0000_lut<3>11)
+     LUT4_D:I0->O          2   0.612   0.410  U0_ALU/Madd_Y_addsub0000_lut<3>48 (U0_ALU/Madd_Y_addsub0000_lut<3>)
+     LUT3:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC331_SW0_G (N34)
+     MUXF5:I1->O           1   0.278   0.387  U0_ALU/ARITH_LOGIC331_SW0 (N22)
+     LUT4:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC348_F (N49)
+     MUXF5:I0->O           9   0.278   0.000  U0_ALU/ARITH_LOGIC348 (DATA_OUT_3_OBUF)
+     FDRE:D                    0.268          U0_REGISTER4/Y_3
+    ----------------------------------------
+    Total                      9.182ns (5.602ns logic, 3.580ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1_BUFFER4/Y_cmp_eq0000'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.754ns (Levels of Logic = 1)
+  Source:            DATA_IN<3> (PAD)
+  Destination:       U1_BUFFER4/Y_3 (LATCH)
+  Destination Clock: U1_BUFFER4/Y_cmp_eq0000 falling
+
+  Data Path: DATA_IN<3> to U1_BUFFER4/Y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  DATA_IN_3_IBUF (DATA_IN_3_IBUF)
+     LD:D                      0.268          U1_BUFFER4/Y_3
+    ----------------------------------------
+    Total                      1.754ns (1.374ns logic, 0.380ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U0_BUFFER4/Y_cmp_eq0000'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.754ns (Levels of Logic = 1)
+  Source:            DATA_IN<3> (PAD)
+  Destination:       U0_BUFFER4/Y_3 (LATCH)
+  Destination Clock: U0_BUFFER4/Y_cmp_eq0000 falling
+
+  Data Path: DATA_IN<3> to U0_BUFFER4/Y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  DATA_IN_3_IBUF (DATA_IN_3_IBUF)
+     LD:D                      0.268          U0_BUFFER4/Y_3
+    ----------------------------------------
+    Total                      1.754ns (1.374ns logic, 0.380ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.248ns (Levels of Logic = 3)
+  Source:            CLOCK_BTN (PAD)
+  Destination:       DEBOUNCER/run_counter (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: CLOCK_BTN to DEBOUNCER/run_counter
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.520  CLOCK_BTN_IBUF (CLOCK_BTN_IBUF)
+     LUT4_L:I1->LO         1   0.612   0.130  DEBOUNCER/run_counter_mux0000_SW0 (N14)
+     LUT3:I2->O            1   0.612   0.000  DEBOUNCER/run_counter_mux0000 (DEBOUNCER/run_counter_mux0000)
+     FD:D                      0.268          DEBOUNCER/run_counter
+    ----------------------------------------
+    Total                      3.248ns (2.598ns logic, 0.650ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RD_WR'
+  Total number of paths / destination ports: 544 / 11
+-------------------------------------------------------------------------
+Offset:              11.673ns (Levels of Logic = 9)
+  Source:            ALU_IN_0 (LATCH)
+  Destination:       seg<4> (PAD)
+  Source Clock:      RD_WR falling
+
+  Data Path: ALU_IN_0 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            9   0.588   0.766  ALU_IN_0 (ALU_IN_0)
+     LUT3:I1->O            2   0.612   0.410  U0_ALU/Y_mux0001<3>411 (U0_ALU/N18)
+     LUT4:I2->O            1   0.612   0.509  U0_ALU/Madd_Y_addsub0000_lut<3>11 (U0_ALU/Madd_Y_addsub0000_lut<3>11)
+     LUT4_D:I0->O          2   0.612   0.410  U0_ALU/Madd_Y_addsub0000_lut<3>48 (U0_ALU/Madd_Y_addsub0000_lut<3>)
+     LUT3:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC331_SW0_G (N34)
+     MUXF5:I1->O           1   0.278   0.387  U0_ALU/ARITH_LOGIC331_SW0 (N22)
+     LUT4:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC348_F (N49)
+     MUXF5:I0->O           9   0.278   0.849  U0_ALU/ARITH_LOGIC348 (DATA_OUT_3_OBUF)
+     LUT4:I0->O            1   0.612   0.357  U0_DISP_CONTROLLER/Mrom_digit_out41 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                     11.673ns (7.985ns logic, 3.688ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DEBOUNCER/DEB_BTN'
+  Total number of paths / destination ports: 152 / 11
+-------------------------------------------------------------------------
+Offset:              9.073ns (Levels of Logic = 7)
+  Source:            U0_REGISTER4/Y_3 (FF)
+  Destination:       seg<4> (PAD)
+  Source Clock:      DEBOUNCER/DEB_BTN rising
+
+  Data Path: U0_REGISTER4/Y_3 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.383  U0_REGISTER4/Y_3 (U0_REGISTER4/Y_3)
+     LUT4_D:I3->O          2   0.612   0.410  U0_ALU/Madd_Y_addsub0000_lut<3>48 (U0_ALU/Madd_Y_addsub0000_lut<3>)
+     LUT3:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC331_SW0_G (N34)
+     MUXF5:I1->O           1   0.278   0.387  U0_ALU/ARITH_LOGIC331_SW0 (N22)
+     LUT4:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC348_F (N49)
+     MUXF5:I0->O           9   0.278   0.849  U0_ALU/ARITH_LOGIC348 (DATA_OUT_3_OBUF)
+     LUT4:I0->O            1   0.612   0.357  U0_DISP_CONTROLLER/Mrom_digit_out41 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                      9.073ns (6.687ns logic, 2.386ns route)
+                                       (73.7% logic, 26.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1272 / 11
+-------------------------------------------------------------------------
+Delay:               13.901ns (Levels of Logic = 11)
+  Source:            ALU_CONTROL_SIGNALS<1> (PAD)
+  Destination:       seg<4> (PAD)
+
+  Data Path: ALU_CONTROL_SIGNALS<1> to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   0.919  ALU_CONTROL_SIGNALS_1_IBUF (ALU_CONTROL_SIGNALS_1_IBUF)
+     LUT3:I1->O           11   0.612   0.945  U0_ALU/Y_mux0001<3>11 (U0_ALU/N11)
+     LUT3:I0->O            2   0.612   0.410  U0_ALU/Y_mux0001<3>411 (U0_ALU/N18)
+     LUT4:I2->O            1   0.612   0.509  U0_ALU/Madd_Y_addsub0000_lut<3>11 (U0_ALU/Madd_Y_addsub0000_lut<3>11)
+     LUT4_D:I0->O          2   0.612   0.410  U0_ALU/Madd_Y_addsub0000_lut<3>48 (U0_ALU/Madd_Y_addsub0000_lut<3>)
+     LUT3:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC331_SW0_G (N34)
+     MUXF5:I1->O           1   0.278   0.387  U0_ALU/ARITH_LOGIC331_SW0 (N22)
+     LUT4:I2->O            1   0.612   0.000  U0_ALU/ARITH_LOGIC348_F (N49)
+     MUXF5:I0->O           9   0.278   0.849  U0_ALU/ARITH_LOGIC348 (DATA_OUT_3_OBUF)
+     LUT4:I0->O            1   0.612   0.357  U0_DISP_CONTROLLER/Mrom_digit_out41 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                     13.901ns (9.115ns logic, 4.786ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.21 secs
+ 
+--> 
+
+Total memory usage is 248020 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

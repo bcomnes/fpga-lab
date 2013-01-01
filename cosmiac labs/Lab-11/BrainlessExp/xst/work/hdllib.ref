@@ -1,0 +1,16 @@
+EN buffer4 NULL C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd sub00/vhpl04 1304625459
+AR brainless_up behavioral C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd sub00/vhpl11 1304625468
+AR clk_press_debouncer behavioral C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd sub00/vhpl13 1304625462
+EN disp_controller NULL C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd sub00/vhpl14 1304625465
+EN clk_press_debouncer NULL C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd sub00/vhpl12 1304625461
+AR decoder behavioral C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd sub00/vhpl03 1304625458
+EN clock_buffer NULL C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd sub00/vhpl06 1304612584
+EN register4 NULL C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd sub00/vhpl08 1304625463
+AR buffer4 behavioral C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd sub00/vhpl05 1304625460
+AR alu behavioral C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd sub00/vhpl01 1304625456
+EN brainless_up NULL C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd sub00/vhpl10 1304625467
+EN decoder NULL C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd sub00/vhpl02 1304625457
+AR disp_controller behavioral C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd sub00/vhpl15 1304625466
+AR register4 behavioral C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd sub00/vhpl09 1304625464
+AR clock_buffer behavioral C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd sub00/vhpl07 1304612585
+EN alu NULL C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd sub00/vhpl00 1304625455

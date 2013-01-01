@@ -1,0 +1,46 @@
+Release 12.1 - xst M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/BrianZ/Desktop/BrainlessExp/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/BrianZ/Desktop/BrainlessExp/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd" in Library work.
+Architecture behavioral of Entity buffer4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd" in Library work.
+Architecture behavioral of Entity register4 is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd" in Library work.
+Architecture behavioral of Entity brainless_up is up to date.
+Compiling vhdl file "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" in Library work.
+Entity <CLK_PRESS_DEBOUNCER> compiled.
+ERROR:HDLParsers:3312 - "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" Line 78. Undefined symbol 'DEB_CLK'.
+ERROR:HDLParsers:1209 - "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" Line 83. DEB_CLK: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> 
+
+Total memory usage is 203384 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

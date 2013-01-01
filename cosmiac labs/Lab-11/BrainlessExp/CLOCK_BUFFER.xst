@@ -1,0 +1,6 @@
+set -tmpdir "C:/Users/BrianZ/Desktop/BrainlessExp/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/BrianZ/Desktop/BrainlessExp/xst"
+elaborate
+-lso "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.lso"
+-ifn CLOCK_BUFFER.prj
+-ifmt mixed

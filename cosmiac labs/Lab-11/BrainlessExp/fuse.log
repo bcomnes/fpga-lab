@@ -1,0 +1,33 @@
+Running: C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/BrianZ/Desktop/BrainlessExp/Brainless_uP_tb_isim_beh.exe -prj C:/Users/BrianZ/Desktop/BrainlessExp/Brainless_uP_tb_beh.prj work.Brainless_uP_tb 
+ISim M.53d (signature 0x7dea747)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/REGISTER4.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/DISP_controller.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/DECODER.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/CLOCK_BUFFER.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/BUFFER4.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/BRAINLESS_uP.vhd" into library work
+Parsing VHDL file "C:/Users/BrianZ/Desktop/BrainlessExp/Brainless_uP_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity decoder [decoder_default]
+Compiling architecture behavioral of entity buffer4 [buffer4_default]
+Compiling architecture behavioral of entity clk_press_debouncer [clk_press_debouncer_default]
+Compiling architecture behavioral of entity register4 [register4_default]
+Compiling architecture behavioral of entity disp_controller [disp_controller_default]
+Compiling architecture behavioral of entity brainless_up [brainless_up_default]
+Compiling architecture behavior of entity brainless_up_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 19 VHDL Units
+Built simulation executable C:/Users/BrianZ/Desktop/BrainlessExp/Brainless_uP_tb_isim_beh.exe
+Fuse Memory Usage: 19400 KB
+Fuse CPU Usage: 436 ms

@@ -1,0 +1,27 @@
+######### Pin assignments for top_sequence ###########
+
+## The Spartan 3E's 50 MHz clock is used in the clock buffer.
+
+NET "dig_clk"	LOC = "B8"  ;					# CLK_50MHZ
+
+## 'RESET' and 'btn_clk' are tied to buttons
+## The 'PULLDOWN' constraint makes the button return a
+## low when it is released, otherwise it will float.
+
+NET "RESET"		LOC = "G18" ;	# SW<0>
+NET "btn_clk"	LOC = "B18" ;	# BTN
+
+## The data input will be controlled with a switch
+
+NET "X"			LOC = "H18" ;					# SW<1>
+
+## Outputs are routed to the LED's
+
+NET "A"			LOC = "J14" ;					# LED<0>
+NET "B"			LOC = "J15" ;					# LED<1>
+NET "C"			LOC = "K15" ;					# LED<2>
+NET "D"			LOC = "K14" ;					# LED<3>
+NET "E"			LOC = "E17" ;					# LED<4>
+NET "F"			LOC = "P15" ;					# LED<5>
+NET "Z"			LOC = "F4"  ;					# LED<6>
+NET "buttonclock"			LOC = "R4"  ;					# LED<7>

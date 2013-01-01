@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\BrianZ\Desktop\BrainlessExp\BRAINLESS_uP.ncd
+OUTFILE=C:\Users\BrianZ\Desktop\BrainlessExp\BRAINLESS_uP.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\BrianZ\Desktop\BrainlessExp
+LICENSE=ISE
+USER_INFO=176012997_174110256_174416042_024

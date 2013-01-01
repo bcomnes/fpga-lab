@@ -1,0 +1,20 @@
+# The pin assignments in this file are for the 
+# Nexys 3, Spartan 6 XC6LX16-CS324
+# if you are using a different board, change the 
+# LOC = pin assignment as appropriate
+
+NET "clk" LOC = "V10"; 					# clk location, as referenced in the Data Sheet
+NET "enable" LOC = "C4";				# BTNL
+NET "input(0)" LOC = "T10"; 			# SW0
+NET "input(1)" LOC = "T9"; 			# SW1
+NET "input(2)" LOC = "V9"; 			# SW2
+NET "input(3)" LOC = "M8"; 			# SW3
+NET "bufferOut(0)" LOC = "U16"; 		# LD0
+NET "bufferOut(1)" LOC = "V16"; 		# LD1
+NET "bufferOut(2)" LOC = "U15"; 		# LD2
+NET "bufferOut(3)" LOC = "V15"; 		# LD3
+NET "registerOut(0)" LOC = "M11";	# LD4
+NET "registerOut(1)" LOC = "N11"; 	# LD5
+NET "registerOut(2)" LOC = "R11"; 	# LD6
+NET "registerOut(3)" LOC = "T11"; 	# LD7
+

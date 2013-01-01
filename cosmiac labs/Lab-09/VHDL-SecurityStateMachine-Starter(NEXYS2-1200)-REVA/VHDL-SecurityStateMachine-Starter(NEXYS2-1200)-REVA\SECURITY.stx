@@ -1,0 +1,50 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/SECURITY is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/SECURITY.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/SECURITY.vhd".
+WARNING:HDLParsers:3607 - Unit work/SECURITY/RTL is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/SECURITY.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/SECURITY.vhd".
+WARNING:HDLParsers:3607 - Unit work/FSM is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/FSM.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/FSM.vhd".
+WARNING:HDLParsers:3607 - Unit work/FSM/Behavioral is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/FSM.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/FSM.vhd".
+WARNING:HDLParsers:3607 - Unit work/INDICATORS is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/INDICATORS.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/INDICATORS.vhd".
+WARNING:HDLParsers:3607 - Unit work/INDICATORS/Behavioral is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/INDICATORS.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/INDICATORS.vhd".
+WARNING:HDLParsers:3607 - Unit work/MEM16 is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/MEM16.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/MEM16.vhd".
+WARNING:HDLParsers:3607 - Unit work/MEM16/Behavioral is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/MEM16.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/MEM16.vhd".
+WARNING:HDLParsers:3607 - Unit work/TIMER_DISPLAY is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/TIMER_DISPLAY.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/TIMER_DISPLAY.vhd".
+WARNING:HDLParsers:3607 - Unit work/TIMER_DISPLAY/Behavioral is now defined in a different file.  It was defined in "C:/VHDL training/VHDL-SecurityStateMachine-NEXYS2-V1.0/TIMER_DISPLAY.vhd", and is now defined in "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/TIMER_DISPLAY.vhd".
+Compiling vhdl file "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/INDICATORS.vhd" in Library work.
+Architecture behavioral of Entity indicators is up to date.
+Compiling vhdl file "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/TIMER_DISPLAY.vhd" in Library work.
+Architecture behavioral of Entity timer_display is up to date.
+Compiling vhdl file "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/MEM16.vhd" in Library work.
+Architecture behavioral of Entity mem16 is up to date.
+Compiling vhdl file "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/FSM.vhd" in Library work.
+ERROR:HDLParsers:164 - "C:/VHDL-SecurityStateMachine-Starter(NEXYS2-1200)-REVA/FSM.vhd" Line 26. parse error, unexpected CLOSEPAR, expecting IDENTIFIER
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+
+Total memory usage is 156016 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

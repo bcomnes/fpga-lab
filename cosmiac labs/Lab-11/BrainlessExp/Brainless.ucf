@@ -1,0 +1,52 @@
+##***********************************************************
+## File:		Brainless uProcessor user constraints file
+##
+##
+## Created:	May 5,2011 CK, BZ, BM
+##
+##***********************************************************
+
+NET "SYS_CLK" 						LOC = "B8"; #50 MHz Oscillator
+NET "CLOCK_BTN" 					LOC = "B18"; #Push Button 0
+NET "DATA_IN<0>" 					LOC = "G18"; #Switch 0
+NET "DATA_IN<1>" 					LOC = "H18"; #Switch 1
+NET "DATA_IN<2>" 					LOC = "K18"; #Switch 2
+NET "DATA_IN<3>" 					LOC = "K17"; #Switch 3
+NET "BUFFER_SELECT" 				LOC = "L14"; #Switch 4
+NET "RD_WR" 						LOC = "L13";  #Switch 5 
+NET "RD_WR" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ALU_CONTROL_SIGNALS<0>" 	LOC = "D18"; #Push Button 1
+NET "ALU_CONTROL_SIGNALS<1>" 	LOC = "E18"; #Push Button 2
+NET "ALU_CONTROL_SIGNALS<2>" 	LOC = "H13"; #Push Button 3
+NET "LOAD_ACC" 					LOC = "N17"; #Switch 6
+NET "ACC_2_DATA"		 			LOC = "R17"; #Switch 7
+NET "DATA_OUT<0>" 				LOC = "J14"; #LED 0
+NET "DATA_OUT<1>" 				LOC = "J15"; #LED 1
+NET "DATA_OUT<2>" 				LOC = "K15"; #LED 2
+NET "DATA_OUT<3>" 				LOC = "K14"; #LED 3
+
+# 7 segment display
+NET "seg<0>" LOC = "L18"; # Bank = 1, Pin name = IO_L10P_1, Type = I/O, Sch name = CA
+NET "seg<1>" LOC = "F18"; # Bank = 1, Pin name = IO_L19P_1, Type = I/O, Sch name = CB
+NET "seg<2>" LOC = "D17"; # Bank = 1, Pin name = IO_L23P_1/HDC, Type = DUAL, Sch name = CC
+NET "seg<3>" LOC = "D16"; # Bank = 1, Pin name = IO_L23N_1/LDC0, Type = DUAL, Sch name = CD
+NET "seg<4>" LOC = "G14"; # Bank = 1, Pin name = IO_L20P_1, Type = I/O, Sch name = CE
+NET "seg<5>" LOC = "J17"; # Bank = 1, Pin name = IO_L13P_1/A6/RHCLK4/IRDY1, Type = RHCLK/DUAL, Sch name = CF
+NET "seg<6>" LOC = "H14"; # Bank = 1, Pin name = IO_L17P_1, Type = I/O, Sch name = CG
+
+NET "an" LOC = "F17"; #Anode 0
+NET "an1" LOC = "H17"; #Anode 1
+NET "an2" LOC = "C18"; #Anode 2
+NET "an3" LOC = "F15"; #Anode 3
+
+## -------------------------------------------------
+## The format for this file is as follows:
+## NET "name_of_the_signal" LOC = PXX; 
+## where XX is the PIN name (from datasheet)
+## and name_of_the_signal is the name of the 
+## signal you want to map out to a pin of the chip
+## For instance, swith no.0 uses pin G18, therefore:
+##
+## NET "name_of_signal" LOC = G18;
+##
+## -------------------------------------------------

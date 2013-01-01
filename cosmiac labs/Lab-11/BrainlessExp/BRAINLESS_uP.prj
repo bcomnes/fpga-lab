@@ -1,0 +1,7 @@
+vhdl work "REGISTER4.vhd"
+vhdl work "DISP_controller.vhd"
+vhdl work "DECODER.vhd"
+vhdl work "CLOCK_BUFFER.vhd"
+vhdl work "BUFFER4.vhd"
+vhdl work "ALU.vhd"
+vhdl work "BRAINLESS_uP.vhd"
