@@ -1,0 +1,2 @@
+vhdl work "FULL_ADDER.vhd"
+vhdl work "FULL_ADDER_TB.vhd"

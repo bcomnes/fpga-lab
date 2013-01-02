@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\Administrator\Desktop\fpga-lab\cosmiac labs\Lab-02\FULL_ADDER_SCH\full_adder_sch.ncd
+OUTFILE=C:\Documents and Settings\Administrator\Desktop\fpga-lab\cosmiac labs\Lab-02\FULL_ADDER_SCH\full_adder_sch.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Documents and Settings\Administrator\Desktop\fpga-lab\cosmiac labs\Lab-02\FULL_ADDER_SCH
+LICENSE=WebPack
+USER_INFO=210704754_0_0_037

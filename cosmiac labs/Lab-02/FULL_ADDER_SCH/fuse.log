@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER_TB_isim_beh.exe -prj C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER_TB_beh.prj work.FULL_ADDER_TB 
+ISim P.40xd (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 65588 KB
+Fuse CPU Usage: 500 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity FULL_ADDER [full_adder_default]
+Compiling architecture behavior of entity full_adder_tb
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER_TB_isim_beh.exe
+Fuse Memory Usage: 73400 KB
+Fuse CPU Usage: 640 ms

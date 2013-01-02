@@ -1,0 +1,10 @@
+# Inputs
+
+NET "A" LOC = "T10"; #Switch 0 (SW0)
+NET "B" LOC = "T9"; #Siwtch 1 (SW1)
+NET "Cin" LOC = "V9"; # Switch 2 (SW2)
+
+# Outputs
+
+NET "SUM" LOC = "U16"; #LED 0 for SUM
+NET "COUT" LOC = "V16"; #LED 1 for COUT
