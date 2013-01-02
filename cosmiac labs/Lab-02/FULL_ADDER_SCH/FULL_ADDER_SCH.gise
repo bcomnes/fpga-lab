@@ -78,6 +78,8 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -89,6 +91,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1357154776" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1357154776">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1357155086" xil_pn:in_ck="-8348089465441961095" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1357155086">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -137,6 +140,7 @@
     </transform>
     <transform xil_pn:end_ts="1357156641" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1357156641">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1357156643" xil_pn:in_ck="6351553875096643835" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5550827475261097274" xil_pn:start_ts="1357156641">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -228,6 +232,7 @@
     <transform xil_pn:end_ts="1357156767" xil_pn:in_ck="6351553875096638386" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1357156740">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="full_adder_sch.bgn"/>
       <outfile xil_pn:name="full_adder_sch.bit"/>

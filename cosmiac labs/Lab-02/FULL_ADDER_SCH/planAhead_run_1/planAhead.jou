@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Wed Jan 02 13:13:12 2013
+# Process ID: 308
+# Log file: C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/pa.fromNetlist.tcl}

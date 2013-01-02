@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Wed Jan 02 13:13:12 2013
+# Process ID: 308
+# Log file: C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/pa.fromNetlist.tcl}
+# create_project -name FULL_ADDER_SCH -dir "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/planAhead_run_1" -part xc6slx16csg324-2
+create_project: Time (s): elapsed = 00:00:32 . Memory (MB): peak = 202.176 ; gain = 0.000
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/full_adder_sch.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "FULL_ADDER.ucf" [current_fileset -constrset]
+Adding file 'C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER.ucf' to fileset 'constrs_1'
+# add_files [list {FULL_ADDER.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-2
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design full_adder_sch.ngc ...
+WARNING:NetListWriters:298 - No output is written to full_adder_sch.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file full_adder_sch.edif ...
+ngc2edif: Total memory usage is 42584 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/FULL_ADDER_SCH.data/cache/full_adder_sch_ngc_f54e1a34.edif]
+Finished Parsing EDIF File [./planAhead_run_1/FULL_ADDER_SCH.data/cache/full_adder_sch_ngc_f54e1a34.edif]
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER.ucf]
+Finished Parsing UCF File [C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/FULL_ADDER.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: d05f6fce
+link_design: Time (s): elapsed = 00:05:59 . Memory (MB): peak = 202.176 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jan 02 15:29:20 2013...
+INFO: [Common 17-83] Releasing license: PlanAhead

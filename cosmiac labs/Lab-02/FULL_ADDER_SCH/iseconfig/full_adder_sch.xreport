@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-01-02T11:46:43</DateModified>
+  <DateModified>2013-01-02T13:11:48</DateModified>
   <ModuleName>full_adder_sch</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH/iseconfig/full_adder_sch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Documents and Settings/Administrator/Desktop/fpga-lab/cosmiac labs/Lab-02/FULL_ADDER_SCH\</ImplementationReportsDirectory>
   <DateInitialized>2013-01-02T11:13:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
