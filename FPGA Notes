@@ -1,0 +1,168 @@
+Open the ISE project Navigator
+
+File - > New Project
+
+Give your project a name with no spaces or special characters.  DON’T USE hyphens! (-)
+
+Under top-level source choose HDL
+
+Click next
+
+Under evaluation development board choose Spartan 6 sp601 evaluation platform
+
+Product category family speed package will all be chosen for you
+
+Under Preferred language choose VHDL
+
+Click next
+
+You will get a project summary window (new project 4.png)
+
+This closes the new project wizard, and dropes you into your ISE project navigator Integrated Development enviroment.  It is a very non-intuitive interface, that you will only become accustom to with experience.  
+
+We will be building a simple And circuit using VHDL and manual schematic layouts.  Both are achieve the same thing, although VHDL will eventually get you more mileage.
+
+Add a new source schematic to your project by selecting Project -> New Source which oopens the new source wizard (new source wizard 1)
+
+Give it a name, avoiding special characters and click next to get to the summary of the wizzarrd ( new source wizard 2)
+
+Click finished
+
+It will create the schematic and open it. (new schematic 1)
+
+Click the add symbol toolbar button in the vertical toolbar strip
+
+This opens a menu to the left of the toolbar with digital electronic components.  They are sorted into categories for somewhat quick access, but the name filter is the quickest way to find what you are looking for if you know the name
+
+Click the logic category, and notice the symbols list shortened to only show the logic componants in alphabetical oder
+
+Choose the and2 symbole from the symbol menu.
+
+Now when you roll over the schematic view, you get something that looks like that compotant following around a cross.  This lets you know what symbol you are holding and ready to place on your schematic.  (schematic placement)
+
+Go ahead and place two of these and gates, by hovering to where you want to place them, and clicking once .  Press escape to clear your placement selection and go back to mouse mode.  (schematic placed).
+
+
+To see more clearly, lets zoom in.  Use the zoom tools to zoom in on your parts.   (zoom.png)  or the zoom select tool from the verticle menu.
+
+Use the add wire tool in the verticle toolbar to add short wires to the three leads on your and gate.  Clicking on the terminal on the and gate, then clicking where you want the wire to go drops a wire segment.  Double clicking will end the wireplacement.  Press escape to end wireplacement all together and clear your tool.   (add wire tool)
+
+
+Add IO markers.  These markers wire your circuit to the inputs and outputs of your fpga.   
+
+Click the add IO button in verticle tool bar.  Click all 3 terminal leads to drop a marker.  (lead marker dropped).
+
+Right click to rename each port.  Name the inputs A and B and the output OUT1 (io rename)
+
+Check your schematic for errors in Tools -> Check shematic (check schematic png)
+
+Errors show up in the conosole at the bottom.  Fix any errors.
+
+File -> Save all
+
+Now we test our schematic to see if it works.
+
+
+Project -> Add Source
+
+Select VHDL Test Bench
+
+Give it a name and press next  (addtb)
+
+The next window will ask you to select wich vhdl or schematic to test
+
+You only have one (AND_schematic) so select that (tbconfirm)
+
+Click next to view a summary (tbsummary)
+
+The wizard will close and you will be presented with a file called [name of file].vhd which is your vhdl code you will use to specify how to test your schematic you slected in the wizard..   (tbvhdl)
+
+
+This VHDL file will be where we describe how we want to test our circuit during simulation.  Make the following changes to the code. (tb changes)
+
+File-> Save all
+
+Click design tab on left
+Click simulation (simtab)
+
+Select your test bench
+
+Expand ISIM smulator
+Double click simulate behaviorl model
+
+This compiles the schematic, and test bench.  
+
+This launches the ISim program and simulates the inputs to your circuit.
+
+Make sure to press the zoom out button to see the full signal.
+
+Close ISIm
+
+Now we need to create a constraints file.  A UFC file.  This file assigns io pins of the fpga to the io ports of our code.
+
+Switch back to the implementation view
+
+We need to know the switch names and LED names (switches)
+
+Right click the hierarchy payne and click new source
+Select implementation constraints file and give it a name  *(new const)
+
+You will see a constaint summary click finish.  (const summary)
+
+You should now see it under your schematic.  open it (bare constraint)
+
+Enter the code from the screenshot  (Const Code)
+
+Plug in the FPGA board
+
+Turn it on.  Make sure it says pass 128
+
+Highlight you .sch in your hierarchy view and double click Generate programming file in your lower Process menu (generate programming file)
+
+Get coffee.  This takes a few minutes. 
+
+Once it stopped, you will have 3 green checks,  If there were errors, try to fix them and try again.  (Generate complete)
+
+Now upload the program to your board.  Open Digilent Adept, and switch to the Test tab and click run RAM/Flash test.  IF it passes you are talking to your board.  If not, something went wrong. (adept test)
+
+Go to the config tab and click brows. (adept config)
+
+Navigate to your project directory folder and open the .bit file.  (bit file open)
+
+Click program and your schematic is now being configured on the FPGA .
+
+Test your and gate, confirming that the led comes on when they are both switched on.
+
+Note, that powering down your FPGA will reset it.  FPGAs will lose their configuration when they lose power.  Luckily, our board has non volatile memory which can store our configuration such that it is reconfigured every time it is powered on.
+
+Now we will do the same thing but using VHDL, a Hardware Description language HDL.  This is a more viable alternative than the schematic layout for complex projects for many reasons.   If you were actually to do a project with the FPGA, you would likely be using VHDL or verilog.  
+
+Click the design tab and then the Implementation view (VHDL start)
+
+Right click the top folder and click New source.  
+
+Select VHDL module and give it a name (vhdl naming) and click next
+
+Type in the names of the ports (they can be the same or different than the ones used in the schematic.  We aare starting from scaratch), (VHDL io)  and click next
+
+You will be presented with a summary  (VHDL  summary)
+
+Contiune on and you should now be presented with your new VHDL file.  (bare vhdl file)
+
+To do the same thing as our schemtic all you have to do is add one line of code between begin and end behavioral
+
+Save the document,
+
+Go to the simulation view in the right, right click the new vhdl file and create a new test bench file like you did before. (vhdl testbench)
+
+Click next and then select the VHDL file we just created (vhdl tb select)
+
+Click next and and confirm at the summary screen
+
+After it is created, the new test bench file is opened.  
+
+Modify the code to look like vhdl_test_bench
+
+Double click simulate behavioral model the same way we did for the schematic, and confirm that our vhdl model works the same way.
+
+See if you can create a constraint file for the vhdl code and upload it to your fpga!
